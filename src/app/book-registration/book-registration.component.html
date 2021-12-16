@@ -1,0 +1,30 @@
+<!-- <div class="heading-style">
+    <h1>{{ title }}</h1>
+  </div> -->
+  <div>
+    <form
+      #bookIssueDetails="ngForm"
+      (ngSubmit)="submitDetails(bookIssueDetails.value)"
+    >
+      <label for="bookName">Book name:</label><br />
+      <input type="text" id="bookName" name="bookName" ngModel /><br />
+  
+      <label for="issuerName">Issuer Name:</label><br />
+      <input type="text" id="issuerName" name="issuerName" ngModel /><br />
+  
+      <label for="issueDate">Issued Date:</label><br />
+      <input type="date" id="issueDate" name="issueDate" ngModel /><br />
+  
+      <label for="lname">Return Date:</label><br />
+      <input
+        type="text"
+        id="dueDate"
+        name="dueDate"
+        readonly="true"
+        value="{{ getDueDate() }}"
+        ngModel
+      /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+  
