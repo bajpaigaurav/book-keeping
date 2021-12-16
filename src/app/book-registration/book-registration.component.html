@@ -7,13 +7,13 @@
       (ngSubmit)="submitDetails(bookIssueDetails.value)"
     >
       <label for="bookName">Book name:</label><br />
-      <input type="text" id="bookName" name="bookName" ngModel /><br />
+      <input type="text" id="bookName" name="bookName" ngModel pInputText /><br />
   
       <label for="issuerName">Issuer Name:</label><br />
-      <input type="text" id="issuerName" name="issuerName" ngModel /><br />
+      <input type="text" id="issuerName" name="issuerName" ngModel pInputText /><br />
   
       <label for="issueDate">Issued Date:</label><br />
-      <input type="date" id="issueDate" name="issueDate" ngModel /><br />
+      <input type="date" id="issueDate" name="issueDate" ngModel pInputText /><br />
   
       <label for="lname">Return Date:</label><br />
       <input
@@ -23,6 +23,7 @@
         readonly="true"
         value="{{ getDueDate() }}"
         ngModel
+        pInputText
       /><br />
       <input type="submit" value="Submit" />
     </form>

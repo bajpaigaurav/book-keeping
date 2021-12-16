@@ -10,6 +10,7 @@ import { RegistrationCompletedComponent } from './registration-completed/registr
 import { BookApiService } from './book-api.service';
 import { HomeComponent } from './home/home.component';
 import {ButtonModule} from 'primeng/button';
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {ButtonModule} from 'primeng/button';
     BrowserModule,
     FormsModule,
     ButtonModule,
+    InputTextModule,
     HttpClientModule,
     AppRoutingModule,
    

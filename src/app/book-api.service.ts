@@ -12,7 +12,7 @@ export class BookApiService {
 
 
   submitBookBooking(request: any): Observable<any> {
-    return this.http.get('assets/book-register-success.json');
-    // return this.http.post(environment.urls.bookBooking + '/addBook', request);
+    //return this.http.get('assets/book-register-success.json');
+     return this.http.post(environment.urls.bookBooking + '/addBook', request);
   }
 }
